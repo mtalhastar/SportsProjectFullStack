@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.sportsequipmentmanagementsystem.UIControllers.TeacherScreenController.ReturnIssueEquipmentController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-5.0" prefHeight="626.0" prefWidth="824.0">
+         <children>
+            <AnchorPane prefHeight="611.0" prefWidth="810.0">
+               <children>
+                  <AnchorPane prefHeight="611.0" prefWidth="810.0" style="-fx-background-color: black;">
+                     <children>
+                        <Rectangle arcHeight="5.0" height="600.0" stroke="BLACK" strokeType="INSIDE" width="96.0" />
+                        <Rectangle arcHeight="5.0" height="60.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#5b5b5b" height="52.0" layoutX="679.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="113.0" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user_icon.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#5b5b5b" height="92.0" layoutX="-4.0" layoutY="338.0" stroke="BLACK" strokeType="INSIDE" width="96.0" />
+                        <ImageView fx:id="ManageEQBtn" fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="76.0" onMouseClicked="#manageEquipment" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@cricket-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="19.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="40.0" layoutX="10.0" layoutY="364.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="5.0" />
+                        <Circle fill="WHITE" layoutX="26.0" layoutY="30.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Text fill="WHITE" layoutX="44.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEMS">
+                           <font>
+                              <Font name="Segoe UI Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <TextField layoutX="127.0" layoutY="15.0" prefHeight="31.0" prefWidth="375.0" promptText="Enter Equipment To Search" />
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="511.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@search-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle fill="WHITE" height="200.0" layoutX="600.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                        <Rectangle fill="WHITE" height="200.0" layoutX="600.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                        <Rectangle fill="WHITE" height="200.0" layoutX="96.0" layoutY="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                        <ImageView fx:id="equipment" fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="172.0" onMouseClicked="#CheckEquipment" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@whistle-icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="29.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@graduation-cap-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="22.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eqipment">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="16.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CheckIssued">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="26.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="20.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return" wrappingWidth="78.00000476837158">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="28.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log Out">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="523.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@sign-out-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="721.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher">
+                           <font>
+                              <Font name="Segoe UI Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Pane layoutX="92.0" layoutY="60.0" prefHeight="541.0" prefWidth="704.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                           <children>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="462.0" layoutY="14.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@black-image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="191.0" fitWidth="221.0" layoutX="60.0" layoutY="154.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@black-image.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="equipmentReturn" layoutX="248.0" layoutY="239.0" mnemonicParsing="false" onAction="#ReturnEquipement" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: BLACK;" text="EquipmentReturned" textFill="#d3d3d3">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <effect>
+                                    <Bloom threshold="0.0" />
+                                 </effect>
+                              </Button>
+                              <TextField fx:id="RollNoTxtF" layoutX="232.0" layoutY="31.0" prefHeight="31.0" prefWidth="221.0" promptText="Enter RollNumber" style="-fx-background-color: WHITE;">
+                                 <effect>
+                                    <DropShadow spread="0.91" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="EquipmentIDtxtF" layoutX="232.0" layoutY="83.0" prefHeight="31.0" prefWidth="221.0" promptText="Enter Equipement ID" style="-fx-background-color: WHITE;">
+                                 <effect>
+                                    <DropShadow spread="0.91" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="AmountOnDamage" layoutX="232.0" layoutY="182.0" prefHeight="31.0" prefWidth="221.0" promptText="Enter fine amount on damage" style="-fx-background-color: WHITE;">
+                                 <effect>
+                                    <DropShadow spread="0.91" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="DateOfReturn" layoutX="233.0" layoutY="132.0" prefHeight="31.0" prefWidth="221.0" promptText="Enter time of return and Date" style="-fx-background-color: WHITE;">
+                                 <effect>
+                                    <DropShadow spread="0.91" />
+                                 </effect>
+                              </TextField>
+                              <TableView fx:id="equipmentBorrowRecordTableView" layoutX="46.0" layoutY="291.0" prefHeight="236.0" prefWidth="600.0">
+                                 <columns>
+                                    <TableColumn fx:id="StudentIDcolumn" prefWidth="83.0" text="StudentID" />
+                                    <TableColumn fx:id="IssuedEquipmentCol" prefWidth="130.0" style="-fx-background-color: WHITE;" text="IssuedEquipment" />
+                                    <TableColumn fx:id="DateOfIssueCol" prefWidth="98.0" text="DateOfIssue" />
+                                    <TableColumn fx:id="EquipmentIDCol" prefWidth="102.0" text="EquipmentID" />
+                                    <TableColumn fx:id="DateOfReturn1" prefWidth="110.0" text="DateOfReturn" />
+                                    <TableColumn fx:id="Fine1" prefWidth="75.0" text="Fine" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </Pane>
+                        <Button fx:id="logOutButton" layoutX="12.0" layoutY="517.0" mnemonicParsing="false" onAction="#logOut" prefHeight="66.0" prefWidth="70.0" style="-fx-background-color: none;" textFill="TRANSPARENT" />
+                        <ImageView fx:id="Fine" fitHeight="30.0" fitWidth="30.0" layoutX="32.0" layoutY="255.0" onMouseClicked="#IssueFining" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@whistle-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="23.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IssueFine">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="24.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Equipment   Request" wrappingWidth="70.00000476837158">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="685.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
